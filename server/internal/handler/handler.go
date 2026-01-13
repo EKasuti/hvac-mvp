@@ -3,8 +3,8 @@ package handler
 import (
 	"time"
 
-	"hvac-mvp/server/internal/db"
-	"hvac-mvp/server/internal/models"
+	"beaverlog/server/internal/db"
+	"beaverlog/server/internal/models"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/shopspring/decimal"
@@ -13,7 +13,7 @@ import (
 // GetROI returns the total money saved.
 // GET /api/roi
 func GetROI(c *fiber.Ctx) error {
-	rate := decimal.NewFromFloat(0.18) // I had hardcoded this value 
+	rate := decimal.NewFromFloat(0.18) // I have hardcoded this value
 
 	var logs []models.MaintenanceLog
 	if result := db.DB.Find(&logs); result.Error != nil {

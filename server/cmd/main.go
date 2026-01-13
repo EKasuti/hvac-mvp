@@ -5,9 +5,9 @@ import (
 	"os"
 	"time"
 
-	"hvac-mvp/server/internal/db"
-	"hvac-mvp/server/internal/handler"
-	"hvac-mvp/server/internal/models"
+	"beaverlog/server/internal/db"
+	"beaverlog/server/internal/handler"
+	"beaverlog/server/internal/models"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"

@@ -1,4 +1,4 @@
-module hvac-mvp/server
+module beaverlog/server
 
 go 1.21
 
